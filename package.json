@@ -1,0 +1,56 @@
+{
+  "name": "@peppermint-digital/react-markdown-editor",
+  "version": "0.1.0",
+  "description": "A customizable Markdown editor component for React with toolbar, keyboard shortcuts, and live preview",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./styles.css": "./dist/styles.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "eslint src/",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0",
+    "react-markdown": ">=9.0.0",
+    "lucide-react": ">=0.300.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-markdown": "^10.1.0",
+    "lucide-react": "^0.469.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peppermint-digital/react-markdown-editor.git"
+  },
+  "keywords": [
+    "react",
+    "markdown",
+    "editor",
+    "wysiwyg",
+    "textarea",
+    "component"
+  ],
+  "author": "Peppermint Digital",
+  "license": "MIT"
+}
