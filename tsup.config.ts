@@ -7,6 +7,6 @@ export default defineConfig({
   splitting: false,
   sourcemap: true,
   clean: true,
-  external: ['react', 'react-dom', 'react-markdown', 'lucide-react'],
+  external: ['react', 'react-dom', 'react-markdown', 'remark-gfm', 'lucide-react'],
   treeshake: true,
 });
