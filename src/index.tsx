@@ -448,10 +448,10 @@ export function MarkdownEditor({
             </div>
 
             {/* Editor Area */}
-            <div className={cn('flex', isSplit && showPreview && styles.divider)}>
+            <div className={cn('flex items-stretch', isSplit && showPreview && styles.divider)}>
                 {/* Textarea */}
                 {(!showPreview || isSplit) && (
-                    <div className={cn('flex-1', isSplit && 'w-1/2')}>
+                    <div className={cn('flex-1 flex', isSplit && 'w-1/2')}>
                         <textarea
                             ref={textareaRef}
                             value={value}
@@ -462,7 +462,7 @@ export function MarkdownEditor({
                             onDragOver={(e) => e.preventDefault()}
                             placeholder={placeholder}
                             disabled={disabled}
-                            className={cn(styles.textarea, textareaClassName)}
+                            className={cn(styles.textarea, 'flex-1', textareaClassName)}
                             style={{ minHeight }}
                         />
                     </div>
