@@ -1,4 +1,4 @@
-# @peppermint-digital/react-markdown-editor
+# @peppermint-digital/markdown-editor
 
 A customizable Markdown editor component for React with toolbar, keyboard shortcuts, and live preview. **Built for shadcn/ui projects** but works anywhere.
 
@@ -16,7 +16,7 @@ A customizable Markdown editor component for React with toolbar, keyboard shortc
 ## Installation
 
 ```bash
-npm install @peppermint-digital/react-markdown-editor
+npm install @peppermint-digital/markdown-editor
 ```
 
 ### Peer Dependencies
@@ -30,7 +30,7 @@ npm install react react-dom react-markdown remark-gfm lucide-react
 ### Basic Usage
 
 ```tsx
-import { MarkdownEditor } from '@peppermint-digital/react-markdown-editor';
+import { MarkdownEditor } from '@peppermint-digital/markdown-editor';
 import { useState } from 'react';
 
 function MyComponent() {
@@ -50,7 +50,7 @@ function MyComponent() {
 ### With Image Upload
 
 ```tsx
-import { MarkdownEditor } from '@peppermint-digital/react-markdown-editor';
+import { MarkdownEditor } from '@peppermint-digital/markdown-editor';
 
 function MyComponent() {
   const [content, setContent] = useState('');
