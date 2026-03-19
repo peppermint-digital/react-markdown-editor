@@ -1,17 +1,23 @@
 {
-  "name": "@peppermint-digital/react-markdown-editor",
-  "version": "0.1.0",
-  "description": "A customizable Markdown editor component for React with toolbar, keyboard shortcuts, and live preview",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
+  "name": "@peppermint-digital/markdown-editor",
+  "version": "0.2.0",
+  "description": "A customizable Markdown editor component for React and Vue with toolbar, keyboard shortcuts, and live preview",
   "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.js"
+    "./core": {
+      "types": "./dist/core/index.d.ts",
+      "import": "./dist/core/index.mjs",
+      "require": "./dist/core/index.js"
     },
-    "./styles.css": "./dist/styles.css"
+    "./react": {
+      "types": "./dist/react/index.d.ts",
+      "import": "./dist/react/index.mjs",
+      "require": "./dist/react/index.js"
+    },
+    "./vue": {
+      "types": "./dist/vue/index.d.ts",
+      "import": "./dist/vue/index.mjs",
+      "require": "./dist/vue/index.js"
+    }
   },
   "files": [
     "dist"
@@ -29,25 +35,43 @@
     "react-dom": ">=18.0.0",
     "react-markdown": ">=9.0.0",
     "remark-gfm": ">=4.0.0",
-    "lucide-react": ">=0.300.0"
+    "lucide-react": ">=0.300.0",
+    "vue": ">=3.3.0",
+    "lucide-vue-next": ">=0.300.0",
+    "markdown-it": ">=14.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": { "optional": true },
+    "react-dom": { "optional": true },
+    "react-markdown": { "optional": true },
+    "remark-gfm": { "optional": true },
+    "lucide-react": { "optional": true },
+    "vue": { "optional": true },
+    "lucide-vue-next": { "optional": true },
+    "markdown-it": { "optional": true }
   },
   "devDependencies": {
+    "@types/markdown-it": "^14.0.0",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
+    "lucide-react": "^0.469.0",
+    "lucide-vue-next": "^0.469.0",
+    "markdown-it": "^14.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-markdown": "^10.1.0",
     "remark-gfm": "^4.0.0",
-    "lucide-react": "^0.469.0",
     "tsup": "^8.0.0",
-    "typescript": "^5.3.0"
+    "typescript": "^5.3.0",
+    "vue": "^3.5.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/peppermint-digital/react-markdown-editor.git"
+    "url": "git+https://github.com/peppermint-digital/markdown-editor.git"
   },
   "keywords": [
     "react",
+    "vue",
     "markdown",
     "editor",
     "wysiwyg",
