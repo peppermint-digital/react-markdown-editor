@@ -30,25 +30,24 @@
     "prepare": "npm run build",
     "prepublishOnly": "npm run build"
   },
+  "dependencies": {
+    "markdown-it": "^14.0.0",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.0"
+  },
   "peerDependencies": {
     "react": ">=18.0.0",
     "react-dom": ">=18.0.0",
-    "react-markdown": ">=9.0.0",
-    "remark-gfm": ">=4.0.0",
     "lucide-react": ">=0.300.0",
     "vue": ">=3.3.0",
-    "lucide-vue-next": ">=0.300.0",
-    "markdown-it": ">=14.0.0"
+    "lucide-vue-next": ">=0.300.0"
   },
   "peerDependenciesMeta": {
     "react": { "optional": true },
     "react-dom": { "optional": true },
-    "react-markdown": { "optional": true },
-    "remark-gfm": { "optional": true },
     "lucide-react": { "optional": true },
     "vue": { "optional": true },
-    "lucide-vue-next": { "optional": true },
-    "markdown-it": { "optional": true }
+    "lucide-vue-next": { "optional": true }
   },
   "devDependencies": {
     "@types/markdown-it": "^14.0.0",
